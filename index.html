@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content=
+        "width=device-width, initial-scale=1" />
+    </head>
+    <style>
+        #card {
+        /* background-color: white; */
+        margin-left: 28%;
+        margin-right: 28%;
+        margin-top: 6%;
+        display: grid;
+        grid-gap: .3em;
+        grid-template-areas:
+        "sec1  sec2 sec3"
+        "sec4 sec4 sec5";
+        grid-template-columns: 
+        34% 14% 51%;
+        padding: 10px;
+        font-family: 'Exo 2', 'regular';
+        /* border-radius: 0.5%; */
+        /* border: 1px solid #6E90CA; */
+        /* box-shadow:2px 2px 20px -1px #6E90CA; */
+    }
+    
+    #mo2 {
+      display: none;
+    }
+    /* #card > div{
+        border: 2px solid black;
+    } */
+    #card > div:first-child{
+        grid-area: sec1;
+    }
+    /* #card > div:fourth-child{
+        grid-area: sec4;
+    } */
+    #pic {
+        grid-area: sec1;
+        /* background-color:grey; */
+        max-height: 66%;
+    }
+    #verticalLogo {
+        grid-area: sec2;
+        /* background-color:yellow; */
+        max-height: 66%;
+    }
+    #links {
+        grid-area: sec3;
+        line-height: 13px;
+        /* background-color:red; */
+        padding-left: 1%;
+        padding-right: 5%;
+        max-height: 66%;
+    }
+    #horizontalLogo {
+        grid-area: sec4;
+        /* background-color: blue; */
+        margin-top: -20%;
+    }
+    #horizontalLogoinfo {
+        grid-area: sec5;
+        padding: 3%;
+        font-size: 1.4em;
+        color: #6E90CA;
+        border-left: 1px solid #6E90CA
+        ;
+        margin-top: -20%;
+    }
+    #pic img{
+        max-height:100%;
+        max-width: 100%;
+      }
+      #verticalLogo img{
+        max-height:100%;
+        /* max-width: 100%; */
+        /* padding-left: 10px; */
+      }
+      #clickable {
+          color: black;
+          max-width: 100%;
+          /* max-height:100%; */
+          /* background-color: green; */
+          overflow-wrap: break-word;
+          list-style-type: none;
+          /* padding-left: 10px;
+          padding-right: 10px; */
+          /* margin-left: 5%;
+          margin-right: 5%; */
+          font-size: 100%;
+    
+      }
+      li{
+        list-style-type: none;
+      }
+      #social img{
+          max-width: 15%;
+          /* max-height: ; */
+      }
+      #social {
+        margin-top: 8%;
+      }
+      .name{
+          font-weight: 600;
+          color: #6E90CA;
+          margin-bottom: 0.2em;
+          font-size: 1.2em;
+    
+      }
+      #position {
+          margin-bottom: 5%;
+    
+      }
+      #clickable li{
+          margin-bottom: 0.4em;
+      }
+    a {
+        text-decoration: none;
+        color: black;
+    }
+    body {
+        background-color: white;
+    }
+
+      @media (max-width:1000px){
+        #horizontalLogoinfo {
+            margin-top: -20%;
+            font-size: 1.1em;
+        }
+        #horizontalLogo {
+          margin-top: -20%;
+      }
+      #clickable{
+        font-size: 12px;
+      }
+      #card{
+        margin-left:25%;
+        margin-right:25%
+      }
+    
+    }
+    @media (max-width:755px){
+    
+      #horizontalLogoinfo {
+          margin-top: -20%;
+          font-size: 1em;
+      }
+      #horizontalLogo {
+        margin-top: -20%;
+    }
+    #clickable{
+      font-size: 8px;
+    }
+    #card{
+      margin-left:25%;
+      margin-right:25%
+    }
+    
+    }
+    @media (max-width:620px){
+    
+      #horizontalLogoinfo {
+          margin-top: -20%;
+          font-size: 0.7em;
+    
+      }
+      #horizontalLogo {
+        margin-top: -20%;
+    }
+    #clickable{
+      font-size: 8px;
+    }
+    #card{
+      margin-left:25%;
+      margin-right:25%
+    }
+    #social {
+      margin-top: 0%;
+    }
+    
+    }
+    
+    @media (max-width:580px){
+    
+      #horizontalLogoinfo {
+          margin-top: 0%;
+          font-size: 0.7em;
+          /* color: green; */
+          max-height:80%;
+      }
+      #horizontalLogo {
+        margin-top: 0%;
+        max-height:80%;
+    }
+    #clickable{
+      font-size: 8px;
+    }
+    #card {
+      /* background-color: white; */
+      margin-left: 20%;
+      margin-right: 20%;
+      margin-top: 6%;
+      display: grid;
+      grid-gap: .3em;
+      grid-template-areas:
+      "sec2  sec4 sec5"
+      "sec2 sec1 sec1"
+      "sec2 sec3 sec3";
+      grid-template-columns: 
+      20% 30% 30%;
+      padding: 10px;
+      font-family: 'Exo 2', 'regular';
+      border-radius: 0.5%;
+    
+    }
+    #social {
+      margin-top: 0%;
+    }
+    #links {
+      margin-top: -25%;
+    }
+    #verticalLogo{
+      margin-top: 60%;
+      max-height: 60%;
+    }
+    #mo2 {
+      display: block;
+      max-height: 100%;
+    }
+    #mo {
+      display: none;
+    }
+    
+    }
+    
+    
+    
+    @media (max-width:400px){
+    
+      #horizontalLogoinfo {
+          margin-top: 0%;
+          font-size: 0.7em;
+          /* color: green; */
+          max-height:80%;
+      }
+      #horizontalLogo {
+        margin-top: 0%;
+        max-height:80%;
+    }
+    #clickable{
+      font-size: 8px;
+    }
+    #card {
+      margin-left: 15%;
+      margin-right: 5%;
+      margin-top: 6%;
+      display: grid;
+      grid-gap: .3em;
+      grid-template-areas:
+      "sec2  sec4 sec5"
+      "sec2 sec1 sec1"
+      "sec2 sec3 sec3";
+      grid-template-columns: 
+      20% 30% 30%;
+      padding: 10px;
+      font-family: 'Exo 2', 'regular';
+      border-radius: 0.5%;
+    
+    }
+    #social {
+      margin-top: 0%;
+    }
+    #links {
+      margin-top: -25%;
+    }
+    #verticalLogo{
+      margin-top: 60%;
+      max-height: 60%;
+    }
+    #mo2 {
+      display: block;
+      max-height: 100%;
+    }
+    #mo {
+      display: none;
+    }
+    
+    }
+    #wer1:hover {
+        text-decoration: underline;
+    }
+    #wer2:hover {
+        text-decoration: underline;
+    }
+    #wer3:hover {
+        text-decoration: underline;
+    }
+    #wer4:hover {
+        text-decoration: underline;
+    }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;700&display=swap" rel="stylesheet">
+    <body>
+        <body id="wbody">
+            <div id="card">
+                <div class="cardSection" id="pic"><img src="Kuelap_Ayuk-Etta-Image.svg"> </div>
+                <div class="cardSection" id="verticalLogo"><img src="Kuelap_arrow.svg"></div>
+                <div class="cardSection" id="links">
+                    <div id="clickable">
+                        
+                            <div class="name">Ayuk Etta</div>
+                            <div class="name" id="position">CEO Kuelab Africa<br></div>
+                            <div><li><a href="tel:+237691376601"  class="cont" id="wer1">T: (+237)691376601</a</li></div>
+                            <div><li><a href="https://wa.me/237691376601" target="_blank" class="cont" id="wer2">W: 691376601</a></li></div>
+                            <div><li><a href="mailto:isaac.belambo@kuelab.africa" class="cont" id="wer3">E:isaac.belambo@kuelab.africa</a></li></div>
+                            <div><li><a href="https://kuelap.africa/" class="cont" id="wer4">Kuelab.africa|Yaounde,Cameroon</a></li></div>
+                        
+                    </div>
+                    <div id="social">
+                        <a href="https://m.facebook.com/kuelap.africa"><img src="Facebook.svg"></a>
+                        <a href="https://www.instagram.com/kuelap.africa/"><img src="Instagram.svg"></a>
+                        <a href="https://www.linkedin.com/company/kuelap-africa/"><img src="LinkedIn.svg"></a>
+                        <a href="https://twitter.com/Kuelap_Africa"><img src="Twitter.svg"></a>
+                        
+                    </div>
+                </div>
+                <div class="cardSection" id="horizontalLogo">
+                    <img id="mo" src="Kuelap_Logo_horizontal.svg">
+                    <img id="mo2" src="Kuelap__Vertical-logo.svg">
+                </div>
+                
+                <div class="cardSection" id="horizontalLogoinfo">
+                    Transforming Digital<br>Financial Services
+                </div>
+            
+            </div>
+    </body>
+</html>
